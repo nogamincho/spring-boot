@@ -3,8 +3,10 @@ phases:
   pre_build:
     commands:
       - echo $JAVA_HOME
-      - cd spring-boot-samples/spring-boot-sample-test
       - mvn --version
   build:
     commands:
+      - cd spring-boot-samples/spring-boot-sample-webflux
+      - mvn test
+      - cd spring-boot-samples/spring-boot-sample-test
       - mvn test
