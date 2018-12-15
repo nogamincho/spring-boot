@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo $JAVA_HOME
+      - java -version
       - mvn --version
   build:
     commands:
