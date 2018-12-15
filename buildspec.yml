@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - cd spring-boot-samples/spring-boot-sample-test
+      - mvn --version
+  build:
+    commands:
+      - mvn test
