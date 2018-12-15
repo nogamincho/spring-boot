@@ -6,7 +6,9 @@ phases:
       - mvn --version
   build:
     commands:
-      - cd spring-boot-samples/spring-boot-sample-webflux
+      - cd spring-boot-samples
+      - cd spring-boot-sample-webflux
       - mvn test
-      - cd spring-boot-samples/spring-boot-sample-test
+      - cd ../
+      - cd spring-boot-sample-test
       - mvn test
